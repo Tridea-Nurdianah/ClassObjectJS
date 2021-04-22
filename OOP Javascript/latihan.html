@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>JS INDEX</title>
+    </head>
+    <body>
+        <form onsubmit="return false ">
+            Berbulu : <input type="text" id="berbulu"> <br><br>
+            Warna : <input type="text " id="warna"> <br><br>
+            JumlahKaki : <input type="text" id="jumlahkaki"> <br><br>
+            <button onclick="klik()">
+                Simpan
+            </button>
+        </form>
+
+        <script>
+            function klik() {
+                let x = document.getElementById("berbulu").value;
+                let y = document.getElementById("warna").value;
+                let z = document.getElementById("jumlahkaki").value;
+
+                class Kelinci {
+
+                    berbulu;
+                    warna;
+                    jumlahkaki;
+
+                    constructor(berbulu, warna, jumlahkaki) {
+                        this.berbulu = x;
+                        this.warna = y;
+                        this.jumlahkaki = z;
+                    }
+
+                    Lompat() {
+                        return "Kelinci Ini Bisa Melompat";
+                    }
+
+                    makan() {
+                        return "Kelinci Ini Makan Wortel";
+                    }
+
+                    nafas() {
+                        return "Kelinci Ini Bisa Bernafas";
+                    }
+
+                    beranak() {
+                        return "Kelinci Ini Beranak";
+                    }
+
+                }
+
+                let tapeti = Kelinci;
+                let kelinciEropa = Kelinci;
+                let fuzzyLop = Kelinci;
+                let kelinciRex = Kelinci;
+
+                console.log("Berbulu : " + tapeti.berbulu);
+                console.log("Warna : " + tapeti.warna);
+                console.log("JumlahKaki  : " + tapeti.jumlahKaki);
+                console.log("Sifat : " + tapeti.lompat());
+
+                console.log("Berbulu : " + kelinciEropa.berbulu);
+                console.log("Warna : " + kelinciEropa.warna);
+                console.log("JumlahKaki : " + kelinciEropa.jumlahKaki);
+                console.log("Sifat : " + kelinciEropa.makan());
+
+                console.log("Berbulu : " + fuzzyLop.berbulu);
+                console.log("Warna : " + fuzzyLop.warna);
+                console.log("JumlahKaki : " + fuzzyLop.jumlahKaki);
+                console.log("Sifat : " + fuzzyLop.nafas());
+
+                console.log("Berbulu : " + kelinciRex.berbulu);
+                console.log("Warna : " + kelinciRex.warna);
+                console.log("JumlahKaki : " + kelinciRex.jumlahKaki);
+                console.log("Sifat : " + kelinciRex.beranak());
+            }
+        </script>
+    </body>
+</html>

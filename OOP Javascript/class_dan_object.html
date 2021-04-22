@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Latihan Class dan Objek </title>
+    </head>
+    <body> 
+        <form onsubmit="return false">
+            <p>baju1 :<input type="text" id="eiger" placeholder ="elzatta"></p>
+            <p>baju2 :<input type="text" id="celvin" placeholder="shafira"></p>
+            <p>baju3 :<input type="text" id="ozuko" placeholder="suqma"></p>
+            <button onclick="sles()">
+                Klik Yuk  
+            </button>
+        </form>
+    
+        
+        <script>
+            function sles() {
+                let x = document.getElementById("elzatta").value;
+                let y = document.getElementById("shafira").value;
+                let z = document.getElementById("suqma").value;
+
+
+                class baju {
+                
+                bahan;
+                warna;
+                elzatta;
+                shafira;
+                suqma;
+        
+                constructor(elzatta, shafira, suqma, bahan, warna) {
+                    this.bahan = "polyester";
+                    this.warna = "abu";
+                    this.bahan1 = "moscrepe";
+                    this.warna1 = "milo";
+                    this.bahan2 = "ceruty";
+                    this.warna2 = "dusty";
+                    this.elzatta = x;
+                    this.shafira = y;
+                    this.suqma = z; 
+
+                }
+        
+                beli(elzatta) {
+                    return "baju " + elzatta + "  akan dibeli";
+                }
+                kegunaan(shafira){
+                    return "baju " + shafira + " menjaga kehormatan diri dan menjaga pandangan oranglain ";
+                }
+                jual(suqma){
+                    return "baju " + suqma + " sudah terjual ";
+                }
+
+                
+            }
+        
+            let jenisbaju1 = new baju;
+            let jenisbaju2 = new baju;
+            let jenisbaju3= new baju;
+
+            console.log(jenisbaju1.beli(x));
+            console.log(jenisbaju1.bahan);
+            console.log(jenisbaju1.warna);
+            
+            console.log(jenisbaju2.kegunaan(y));
+            console.log(jenisbaju2.bahan1);
+            console.log(jenisbaju2.warna1);
+            
+            console.log(jenisbaju3.jual(z));
+            console.log(jenisbaju3.bahan2);
+            console.log(jenisbaju3.warna2);
+            
+        
+        }
+        </script>
+    </body>
+</html>
